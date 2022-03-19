@@ -5,7 +5,8 @@ export class Home extends Component {
 
   render () {
     return (
-      <div>
+        <div>
+            <h1>GC Education Curriculum Website</h1>
         <h1>School project</h1>
         <p>Only for test single-page application, built with:</p>
         <ul>

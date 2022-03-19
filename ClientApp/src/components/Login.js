@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { useState } from "react";
 
 export class Login extends Component {
     static displayName = Login.name;
@@ -17,15 +18,29 @@ export class Login extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Counter</h1>
-
-        <p>This is a simple example of a React component.</p>
-
-        <p aria-live="polite">Current count: <strong>{this.state.currentCount}</strong></p>
-
-        <button className="btn btn-primary" onClick={this.incrementCounter}>Increment</button>
-      </div>
+        <MyForm />
     );
   }
+}
+
+function MyForm() {
+    const [name, setName] = useState("");
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`The name you entered was: ${name}`)
+    }
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>Enter your name:
+                <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+            </label>
+            <input type="submit" />
+        </form>
+    )
 }

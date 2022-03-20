@@ -22,4 +22,10 @@ export class Home extends Component {
       </div>
     );
   }
+
 }
+
+console.log(`${process.env.REACT_APP_NAME} ${process.env.REACT_APP_VERSION}`)
+
+//import packageJson from './../../package.json';
+//console.log(packageJson.version); // "1.0.0"

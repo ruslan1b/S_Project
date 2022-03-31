@@ -76,6 +76,12 @@ export class Footer extends Component {
                         </Column>
                     </Row>
                 </Container>
+                <h2 style={{
+                    color: "green",
+                    textAlign: "center"
+                }}>
+                    Version: {process.env.REACT_APP_VERSION}
+                    </h2>
             </Box>
         );
     }

@@ -9,7 +9,6 @@ import {
     Heading,
 } from './FooterStyle';
 
-//const Footer = () => {
 export class Footer extends Component {
     static displayname = Footer.name;
     render() {
@@ -80,7 +79,6 @@ export class Footer extends Component {
             </Box>
         );
     }
-}
-    
-//};
+}    
+
 export default Footer;

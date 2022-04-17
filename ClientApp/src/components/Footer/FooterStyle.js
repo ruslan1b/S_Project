@@ -2,9 +2,9 @@
 
 export const Box = styled.div`
   background: #b3dcfd;
-  position: absolute;
   bottom: 0;
   width: 100%;
+  margin-top: 50px;
 `;
 
 export const Container = styled.div`

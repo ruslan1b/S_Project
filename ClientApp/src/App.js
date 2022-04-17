@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Login from './components/Login';
 import Registration from './components/Registration';
 import Partners from './components/Partners';
 import Contacts from './components/Contacts';
-import NavMenu from './components/NavMenu';
+import NavMenu from './components/NavMenu/NavMenu';
 import Footer from './components/Footer/Footer';
 
 import './custom.css';
